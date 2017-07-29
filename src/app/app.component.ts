@@ -30,11 +30,12 @@ export class AppComponent {
   }
 
   clearcompleted(evt) {
-    for(let i = this.todos.length - 1; i >= 0; i--) {
-      if (this.todos[i].done){
-        this.todos.splice(i, 1);
-      }
-    }
+    this.todos = this.todos.filter(item => !item.done);
+    // for(let i = this.todos.length - 1; i >= 0; i--) {
+    //   if (this.todos[i].done){
+    //     this.todos.splice(i, 1);
+    //   }
+    // }
     // this.todos.forEach(element => {
     //   if (element.done){
     //     let idx = this.todos.indexOf(element);
