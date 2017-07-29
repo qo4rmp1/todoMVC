@@ -29,7 +29,7 @@
 					</li>
 				</ul>
 			</section>
-			<app-footer [todosLength_Child]="todos.length" (clearcompleted)="clearcompleted($event)"></app-footer>
+			<app-footer [data]="todos" (clearcompleted)="clearcompleted($event)"></app-footer>
 		</section>
 		<footer class="info">
 			<p>Double-click to edit a todo</p>
