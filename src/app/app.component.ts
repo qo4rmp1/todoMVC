@@ -43,4 +43,11 @@ export class AppComponent {
     //   }
     // });
   }
+
+  filterType;
+
+  filterData(data) {
+    console.log(data);
+    this.filterType = data;
+  }
 }
