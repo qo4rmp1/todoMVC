@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  inputHint = '121What needs to be done?';
+  inputHint = 'What needs to be done?';
 }
