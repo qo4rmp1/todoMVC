@@ -14,7 +14,7 @@ export class AppComponent {
 
   addTodo() {
     if (this.todo) {
-
+      //這邊要注意改成[...this.todos];,再變更陣列時,才會觸發變更偵測
       this.todos = [...this.todos];
       this.todos.push({
         text: this.todo,
