@@ -5,13 +5,13 @@
 				<!-- Remove this if you don't implement routing -->
 				<ul class="filters">
 					<li>
-						<a [class.select]="filterType==='All'" (click)="changeFilterType('All');">All</a>
+						<a [class.select]="filterType==='All'" (click)="changeFilterType('All')">All</a>
 					</li>
 					<li>
-						<a [class.select]="filterType==='Active'" (click)="changeFilterType('Active');">Active</a>
+						<a [class.select]="filterType==='Active'" (click)="changeFilterType('Active')">Active</a>
 					</li>
 					<li>
-						<a [class.select]="filterType==='Completed'" (click)="changeFilterType('Completed');">Completed</a>
+						<a [class.select]="filterType==='Completed'" (click)="changeFilterType('Completed')">Completed</a>
 					</li>
 				</ul>
 				<!-- Hidden if no completed items are left ↓ -->

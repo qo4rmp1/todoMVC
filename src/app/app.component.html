@@ -13,7 +13,7 @@
 					<li *ngFor="let item of todos | filterPipe:filterType" [class.completed]="item.done">
             <!-- [ngClass]="{'completed':item.done}" -->
 						<div class="view">
-							<input class="toggle" type="checkbox" [(ngModel)]="item.done" >
+							<input class="toggle" type="checkbox" [(ngModel)]="item.done" (ngModelChange)="todoUpdate(item)" >
 							<label [ngStyle]="{'color': item.done? 'green' : 'red'}">{{item.text | uppercase }}</label>
 							<button class="destroy" (click)="removeTodo(item)"></button>
 						</div>
