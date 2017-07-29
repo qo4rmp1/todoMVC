@@ -50,4 +50,15 @@ export class AppComponent {
     console.log(data);
     this.filterType = data;
   }
+
+  isToggleAll: boolean = false;
+  toggleAll(event) {
+    this.todos = this.todos.map(item=>{item.done = event; return item;});
+  }
+
+  removeTodo(todo) {
+    console.log(todo);
+    this.todos = this.todos.filter(items=> items !== todo);
+    // this.todos = [...this.todos];
+  }
 }
