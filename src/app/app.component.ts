@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,10 @@ export class AppComponent {
   inputHint = 'What needs to be done?';
   todos: any[] = [];
   todo: string = '';
+
+  constructor(private http:Http) {
+
+  }
 
   addTodo() {
     if (this.todo) {
