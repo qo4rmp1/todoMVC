@@ -31,5 +31,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  log() {
+    console.log('call footerlog');
+  }
   tooMore;
 }
