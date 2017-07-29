@@ -7,7 +7,7 @@ import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  @Input()
+  @Input('todosLength_Child')
   todosLength;
 
   @Output()

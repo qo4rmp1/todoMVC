@@ -14,7 +14,7 @@
             <!-- [ngClass]="{'completed':item.done}" -->
 						<div class="view">
 							<input class="toggle" type="checkbox" [(ngModel)]="item.done" >
-							<label [ngStyle]="{'color': item.done? 'green' : 'red'}">{{item.text}}</label>
+							<label [ngStyle]="{'color': item.done? 'green' : 'red'}">{{item.text | uppercase}}</label>
 							<button class="destroy"></button>
 						</div>
 						<input class="edit" value="Create a TodoMVC template">
@@ -29,7 +29,7 @@
 					</li>
 				</ul>
 			</section>
-			<app-footer [todosLength]="todos.length" (clearcompleted)="clearcompleted($event)"></app-footer>
+			<app-footer [todosLength_Child]="todos.length" (clearcompleted)="clearcompleted($event)"></app-footer>
 		</section>
 		<footer class="info">
 			<p>Double-click to edit a todo</p>

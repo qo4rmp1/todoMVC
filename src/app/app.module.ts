@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './title/title.component';
 import { FooterComponent } from './footer/footer.component';
+import { FilterPipePipe } from './filter-pipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
-    FooterComponent
+    FooterComponent,
+    FilterPipePipe
   ],
   imports: [
     BrowserModule,
