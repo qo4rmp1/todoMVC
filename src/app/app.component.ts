@@ -20,4 +20,18 @@ export class AppComponent {
       this.todo = '';
     }
   }
+
+  clearcompleted(evt) {
+    for(let i = this.todos.length - 1; i >= 0; i--) {
+      if (this.todos[i].done){
+        this.todos.splice(i, 1);
+      }
+    }
+    // this.todos.forEach(element => {
+    //   if (element.done){
+    //     let idx = this.todos.indexOf(element);
+    //     this.todos.splice(idx, 1);
+    //   }
+    // });
+  }
 }
